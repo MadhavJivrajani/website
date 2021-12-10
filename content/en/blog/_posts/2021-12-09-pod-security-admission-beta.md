@@ -29,7 +29,7 @@ Pod Security also adheres to Kubernetes best practices of declarative object man
 
 ## How Does Pod Security Work?
     
-Pod Security is a built-in [admission controller](/docs/reference/access-authn-authz/admission-controllers/) starting with Kubernetes v1.22, but can also be run as a standalone [webhook](/docs/concepts/security/pod-security-admission/#webhook). Admission controllers function by intercepting requests in the Kubernetes API server prior to persistence to storage. They can either `admit` or `deny` a request. In the case of Pod Security, pod specifications will be evaluated against a configured policy in the form of a Pod Security Standard. This means that security sensitive fields in a pod specification will only be allowed to have [specific](h/docs/concepts/security/pod-security-standards/#profile-details) values. 
+Pod Security is a built-in [admission controller](/docs/reference/access-authn-authz/admission-controllers/) starting with Kubernetes v1.22, but can also be run as a standalone [webhook](/docs/concepts/security/pod-security-admission/#webhook). Admission controllers function by intercepting requests in the Kubernetes API server prior to persistence to storage. They can either `admit` or `deny` a request. In the case of Pod Security, pod specifications will be evaluated against a configured policy in the form of a Pod Security Standard. This means that security sensitive fields in a pod specification will only be allowed to have [specific](/docs/concepts/security/pod-security-standards/#profile-details) values. 
 
 ## Configuring Pod Security
     
